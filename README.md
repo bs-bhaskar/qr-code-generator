@@ -5,6 +5,12 @@ Users can instantly generate QR codes from any text or URL, download them, and e
 
 ---
 
+## 🔗 Live Demo
+
+👉 https://qr-code-generator-eta-flame.vercel.app/
+
+---
+
 ## 🚀 Features
 
 - 🔤 Generate QR codes from text or URLs
@@ -65,16 +71,10 @@ Users can instantly generate QR codes from any text or URL, download them, and e
 
 ---
 
-## 🔗 Live Demo
-
-👉 Add your deployed link here (GitHub Pages / Netlify / Vercel)
-
----
-
 ## 📥 Installation & Usage
 
 1. Clone the repository:
-git clone https://github.com/your-username/qr-code-generator.git
+git clone https://github.com/bs-bhaskar/qr-code-generator.git
 
 2. Open the project folder:
 
