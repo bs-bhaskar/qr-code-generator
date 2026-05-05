@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #262a2f;
+}
+
+.container {
+  width: 400px;
+  padding: 25px 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container p {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.container input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #494eea;
+  outline: 0;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+}
+
+.container button {
+  width: 100%;
+  height: 50px;
+  background: #494eea;
+  color: white;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+#imgBox {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  margin: auto;
+  width: 200px;
+}
+
+#imgBox.show-img {
+  max-height: 300px;
+  border: 1px solid #d1d1d1;
+}
+
+#qrImage {
+  width: 100%;
+  padding: 10px;
+  display: block;
+}
+
+/* Toggle Switch Styling */
+.switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+}
+body.dark .container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+body.dark input,
+body.dark button {
+  background-color: #2c2c2c;
+  color: #fff;
+  border-color: #555;
+}
+body.dark .container button {
+  background-color: #3b82f6;
+}
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .container input,
+  .container button {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  #imgBox {
+    width: 100%;
+  }
+
+  .switch {
+    top: 10px;
+    right: 10px;
+    transform: scale(0.8);
+  }
+}
